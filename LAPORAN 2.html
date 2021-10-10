@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Laporan 2</title>
+   <link rel="stylesheet" href="Laporan2.css" type="text/css" >
+</head>
+<body>
+  <header>
+  <div class="navbar"></div>
+  <nav class="Laporan2">
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+    </ul>
+   </nav>
+  <div class="logo"><img src="LOGO_IT_PLN.png" >
+    <div class="wrap">
+    <div class="container"></div>
+  <h1>FORMULIR PENDAFTARAN MAHASISWA BARU </h1>
+<form action="proses.php" method="post" enctype="multipart/form-data">
+  <fieldset>
+  <table>
+	<legend>Informasi Akun</legend>
+	<p>Username <input type="text" name="username" placeholder="Masukan username"/>
+	
+  <p>Email <input type="email" name="email" placeholder="Masukan email"/></p>
+	<p>Password <input type="password" name="password" placeholder="Masukan password"/></p>
+</fieldset>
+<fieldset>
+<legend>Informasi Data Diri</legend>
+	<p>Nama Lengkap <input type="text" name="nama" placeholder="Masukan Nama"/></p>
+
+	<p>Jenis Kelamin</p>
+    <p><input type="radio" name="jenis_kelamin" value="pria" />Pria</p>
+    <p><input type="radio" name="jenis_kelamin" value="perempuan" />Perempuan</p>
+
+    <P>Tanggal Lahir
+    <input type="text" style="width: 25px" placeholder="dd">
+    <input type="text" style="width: 25px" placeholder="mm">
+    <input type="text" style="width: 50px" placeholder="yyyy">
+    </P>
+
+	<p>Agama
+	  <select name="agama" >
+		<option value="islam">Islam</option>
+		<option value="kristen">Kristen</option>
+		<option value="katholik">Katholik</option>
+		<option value="hindu">Hindu</option>
+		<option value="kristen">Budha</option>
+	  </select>
+	</p>
+
+  <p>HOBI</p>
+      <p><label><input type="checkbox" name="HOBI1" value="Membaca" />Membaca</label></p>
+      <p><label><input type="checkbox" name="HOBI2" value="Menari" />Menari</label></p>
+      <p><label><input type="checkbox" name="HOBI3" value="Berenang" />Berenang</label></p>
+      <p><label><input type="checkbox" name="HOBI3" value="Bernyanyi" />Bernyanyi</label></p>
+      <p><label><input type="checkbox" name="HOBI3" value="Menonton" />Menonton</label></p>
+      <p><label><input type="checkbox" name="HOBI3" value="Mendengar Musik" />Mendengar Musik</label></p>
+     
+      <p>Alamat</p>
+      <p><textarea name="alamat" rows="3" cols="30"></textarea></p>
+      <p>
+        photo:
+        <input type="text">
+        <input type='file' name='foto' accept='image/*' /></p>
+      </p>
+    </table>
+    </fieldset>
+
+<p>
+	<button type="submit">Tombol Submit</button>
+	<button type="reset">Tombol Reset</button>
+</p>
+</form>
+</div>
+</div>
+</header>
+</body>
+</html>
